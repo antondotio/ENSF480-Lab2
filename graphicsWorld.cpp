@@ -1,3 +1,4 @@
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <iostream>
@@ -31,9 +32,10 @@ void GraphicsWorld::run(){
 		s.display();
 	#endif // end of block to test Square
 	#if 1 // Change 0 to 1 to test Rectangle
-		cout << "\nTesting Functions in class Rectangle:";
+		cout << "\nTesting Functions in class Rectangle:"<<endl;
 		Rectangle a(5, 7, 12, 15, "RECTANGLE A");
 		a.display();
+		cout<<endl;
 		Rectangle b(16 , 7, 8, 9, "RECTANGLE B");
 		b.display();
 		double d = a.distance(b);
@@ -101,17 +103,17 @@ void GraphicsWorld::run(){
 		sh [2] = &c;
 		sh [3] = &rc;
 		sh [0]->display();
-		cout << "\nthe area of "<< sh[0]->getName() << "is: "<< sh[0] ->area();
-		cout << "\nthe perimeter of " << sh[0]->getName () << " is: "<< sh[0]->perimeter();
+		cout << "\nthe area of "<< sh[0]->getName() << " is: "<< sh[0] ->area();
+		cout << "\nthe perimeter of " << sh[0]->getName () << " is: "<< sh[0]->perimeter()<<endl;
 		sh [1]->display();
-		cout << "\nthe area of "<< sh[1]->getName() << "is: "<< sh[1] ->area();
-		cout << "\nthe perimeter of " << sh[0]->getName () << " is: "<< sh[1]->perimeter();
+		cout << "\nthe area of "<< sh[1]->getName() << " is: "<< sh[1] ->area();
+		cout << "\nthe perimeter of " << sh[0]->getName () << " is: "<< sh[1]->perimeter()<<endl;
 		sh [2]->display();
-		cout << "\nthe area of "<< sh[2]->getName() << "is: "<< sh[2] ->area();
-		cout << "\nthe circumference of " << sh[2]->getName ()<< " is: "<< sh[2]->perimeter();
+		cout << "\nthe area of "<< sh[2]->getName() << " is: "<< sh[2] ->area();
+		cout << "\nthe circumference of " << sh[2]->getName ()<< " is: "<< sh[2]->perimeter()<<endl;
 		sh [3]->display();
-		cout << "\nthe area of "<< sh[3]->getName() << "is: "<< sh[3] ->area();
-		cout << "\nthe perimeter of " << sh[3]->getName () << " is: "<< sh[3]->perimeter();
+		cout << "\nthe area of "<< sh[3]->getName() << " is: "<< sh[3] ->area();
+		cout << "\nthe perimeter of " << sh[3]->getName () << " is: "<< sh[3]->perimeter()<<endl;
 		cout << "\nTesting copy constructor in class CurveCut:" <<endl;
 		CurveCut cc = rc;
 		cc.display();
