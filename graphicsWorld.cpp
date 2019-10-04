@@ -64,7 +64,7 @@ void GraphicsWorld::run(){
 		rec3.display();
 	#endif // end of block to test Rectangle
 
-	#if 1 // Change 0 to 1 to test using array of pointer and polymorphism
+	#if 0 // Change 0 to 1 to test using array of pointer and polymorphism
 		cout << "\nTesting array of pointers and polymorphism:" <<endl;
 		Shape* sh[4];
 		sh[0] = &s;
