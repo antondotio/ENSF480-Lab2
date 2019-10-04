@@ -4,11 +4,12 @@
 
 class Point{
   public:
-		Point(double x, double y, int id);
+		Point(double x, double y);
 
 		void display();
 		static int counter();
 		double distance(const Point& other) const;
+		static double distance(const Point& p1, const Point& p2);
 
 		double get_x() const;
 		double get_y() const;

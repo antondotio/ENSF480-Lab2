@@ -3,7 +3,7 @@
 
 class GraphicsWorld{
   public:
-		void run();
+		static void run(void);
 };
 
 #endif

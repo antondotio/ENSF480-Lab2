@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <iostream>
 #include <cmath>
+#include <string.h>
 #include "shape.h"
 
 using namespace std;
