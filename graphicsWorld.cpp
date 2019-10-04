@@ -87,13 +87,13 @@ void GraphicsWorld::run(){
 		cout << "the area of " << c.getName() <<" is: "<< c.area() << endl;
 		cout << "the perimeter of " << c.getName() << " is: "<< c.perimeter() << endl;
 		d = a.distance(c);
-		cout << "\nThe distance between rectangle a and circle c is: " <<d;
+		cout << "\nThe distance between rectangle a and circle c is: " <<d<<endl;
 		CurveCut rc (6, 5, 10, 12, 9, "CurveCut rc");
 		rc.display();
-		cout << "the area of " << rc.getName() <<" is: "<< rc.area();
-		cout << "the perimeter of " << rc.getName() << " is: "<< rc.perimeter();
+		cout << "the area of " << rc.getName() <<" is: "<< rc.area()<<endl;
+		cout << "the perimeter of " << rc.getName() << " is: "<< rc.perimeter()<<endl;
 		d = rc.distance(c);
-		cout << "\nThe distance between rc and c is: " <<d;
+		cout << "\nThe distance between rc and c is: " <<d<<endl;
 		// Using array of Shape pointers:
 		Shape* sh[4];
 		sh[0] = &s;
