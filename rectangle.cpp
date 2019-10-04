@@ -5,7 +5,11 @@
 
 using namespace std;
 
-Rectangle::Rectangle(double x, double y, double sidea, double sideb, const char* name): Square(x, y, sidea, name), side_b (sideb) {};
+Rectangle::Rectangle(double x, double y, double sidea, double sideb, const char* name): 
+    Square(x, y, sidea, name),
+    Shape(x, y, name){
+         side_b = sideb; 
+    };
 
 double Rectangle::area(){
     return (side_b * getSideA());
