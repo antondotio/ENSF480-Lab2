@@ -6,11 +6,11 @@
 class Circle : virtual public Shape{
 	public:
 		Circle(double x, double y, double radius, const char* shapeName);
-		double area() const;
-		double perimeter() const;
-		double getRadius() const;
+		double area() ;
+		double perimeter() ;
+		double getRadius() ;
 		void setRadius(double r);
-		void display() const;
+		void display() ;
 
 	private:
 		double radius;

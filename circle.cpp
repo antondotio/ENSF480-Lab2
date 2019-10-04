@@ -7,21 +7,21 @@
 
 using namespace std;
 
-Circle::Circle(double x, double y, double radius, const char* shapeName) : Shape(x, y, shapeName), radius(radius) { };
+Circle::Circle(double x, double y, double rad, const char* shapeName) : Shape(x, y, shapeName) { radius = rad;};
 
-double Circle::area() const{
+double Circle::area() {
     return (M_PI * pow(radius, 2));
 }
 
-double Circle::perimeter() const{
+double Circle::perimeter() {
     return (2 * M_PI * radius);
 }
 
-double Circle::getRadius() const { return radius; }
+double Circle::getRadius()  { return radius; }
 
 void Circle::setRadius(double r){ radius = r; }
 
-void Circle::display() const {
+void Circle::display()  {
     cout<<"Circle Name: "<<getName()<<endl;
     Point o = getOrigin();
     o.display();
