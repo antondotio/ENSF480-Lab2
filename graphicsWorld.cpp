@@ -1,10 +1,14 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <iostream>
+#include <string.h>
 
 #include "graphicsWorld.h"
 #include "point.h"
 #include "square.h"
+#include "shape.h"
+#include "rectangle.h"
+
 using namespace std;
 
 void GraphicsWorld::run(){
@@ -18,12 +22,12 @@ void GraphicsWorld::run(){
 	cout << "\nThe distance between m and n is again: "
 	<< Point::distance(m, n);
 #endif // end of block to test Point
-#if 1 // Change 0 to 1 to test Square
+#if 0 // Change 0 to 1 to test Square
 	cout << "\n\nTesting Functions in class Square:" <<endl;
 	Square s(5, 7, 12, "SQUARE - S");
 	s.display();
 #endif // end of block to test Square
-#if 0 // Change 0 to 1 to test Rectangle
+#if 1 // Change 0 to 1 to test Rectangle
 	cout << "\nTesting Functions in class Rectangle:";
 	Rectangle a(5, 7, 12, 15, "RECTANGLE A");
 	a.display();

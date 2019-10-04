@@ -1,15 +1,15 @@
 #ifndef SQUARE_H
 #define SQUARE_H
 
-#include"shape.h"
+#include "shape.h"
 
 class Square : public Shape{
     public:
-        Square(double x, double y, double side, char* name);
+        Square(double x, double y, double side, const char* name);
         double area();
         double perimeter();
         double getSideA();
-        void setSideA(double side);
+        void set_side_a(double side);
         void display();
     private:
         double side_a;

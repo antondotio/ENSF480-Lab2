@@ -5,11 +5,11 @@
 
 class Rectangle : public Square{
     public:
-        Rectangle(Point origin, char* name, double sidea, double sideb);
+        Rectangle(double x, double y, double sidea, double sideb, const char* name);
         double area();
         double perimeter();
         double getSideB();
-        void setSideB(double side);
+        void set_side_b(double side);
         void display();
     private:
         double side_b;
