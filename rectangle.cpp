@@ -6,8 +6,8 @@
 using namespace std;
 
 Rectangle::Rectangle(double x, double y, double sidea, double sideb, const char* name): 
-    Square(x, y, sidea, name),
-    Shape(x, y, name){
+    Shape(x, y, name),
+    Square(x, y, sidea, name){
          side_b = sideb; 
     };
 
