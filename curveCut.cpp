@@ -26,10 +26,10 @@ double CurveCut::perimeter(){
 }
 
 void CurveCut::display(){
-    cout << "CurveCut Name: " << Rectangle::getName() << endl;
+    cout << "CurveCut Name: " << getName() << endl;
     Point o = getOrigin();
     o.display();
-    cout << "Width: " << Rectangle::getSideA << endl;
-    cout << "Length: " << Rectangle::getSideB<< endl;
-    cout << "Radius of the cut: " << Circle::getRadius() << endl;
+    cout << "Width: " << getSideA() << endl;
+    cout << "Length: " << getSideB() << endl;
+    cout << "Radius of the cut: " << getRadius() << endl;
 }
