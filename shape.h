@@ -13,9 +13,9 @@ class Shape{
 		const Point& getOrigin() const; 
 		const char* getName() const;
 
-		virtual double area() = 0;
-		virtual double perimeter() = 0;
-		virtual void display() = 0;
+		virtual double area();
+		virtual double perimeter();
+		virtual void display();
 		
 		void display() const;
 		double distance (Shape& other) const;
