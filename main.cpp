@@ -1,4 +1,7 @@
-//main.cpp
+#include <stdlib.h>
+#include <stdio.h>
+#include <iostream>
+#include "point.h"
 #include "graphicsWorld.h"
 
 using namespace std;
