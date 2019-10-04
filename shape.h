@@ -6,16 +6,16 @@
 class Shape{
 	public:
 		Shape(double x, double y, const char* shapeName);
-		~Shape();
+		virtual ~Shape();
 		Shape& operator=(const Shape& rhs);
 		Shape(const Shape& other);
 
 		const Point& getOrigin() const; 
 		const char* getName() const;
 
-		virtual double area();
-		virtual double perimeter();
-		virtual void display();
+		virtual double area() = 0;
+		virtual double perimeter() = 0;
+		virtual void display() = 0;
 		
 		void display() const;
 		double distance (Shape& other) const;

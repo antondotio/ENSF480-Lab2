@@ -9,6 +9,7 @@
 #include "shape.h"
 #include "rectangle.h"
 #include "circle.h"
+#include "curveCut.h"
 
 using namespace std;
 
@@ -75,7 +76,7 @@ void GraphicsWorld::run(){
 	sh [3]->display();
 #endif // end of block to test array of pointer and polymorphism
 
-#if 0
+#if 1
 	cout << "\nTesting Functions in class Circle:" <<endl;
 	Circle c (3, 5, 9, "CIRCLE C");
 	c.display();
