@@ -8,7 +8,7 @@
 
 using namespace std;
 
-Shape::Shape(double x, double y, char* shapeName): origin(Point(x,y)), shapeName(shapeName) {};
+Shape::Shape(double x, double y,char* shapeName): origin(Point(x,y)), shapeName(shapeName) {};
 
 const Point& Shape::getOrigin() const { return origin; }
 const char* Shape::getName() const { return shapeName; }

@@ -6,7 +6,7 @@
 
 class Shape{
 	public:
-		Shape(double x, double y, char* shapeName);
+		Shape(double x, double y,char* shapeName);
 		~Shape();
 		Shape& operator=(const Shape& rhs);
 		Shape(const Shape& other);

@@ -6,7 +6,7 @@
 
 class Square : virtual public Shape{
     public:
-        Square(double x, double y, double side, char* name);
+        Square(double x, double y, double side,char* name);
         double area();
         double perimeter();
         double getSideA();

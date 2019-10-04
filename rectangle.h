@@ -6,7 +6,7 @@
 
 class Rectangle : public Square{
     public:
-        Rectangle(double x, double y, char* name, double sidea, double sideb);
+        Rectangle(double x, double y,char* name, double sidea, double sideb);
         double area();
         double perimeter();
         double getSideB();
