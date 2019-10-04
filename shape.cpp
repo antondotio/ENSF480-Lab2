@@ -67,4 +67,16 @@ Shape& Shape::operator=(const Shape& rhs){
 	return *this;
 }
 
+double Shape::area(){
+	return 0;
+}
+
+double Shape::perimeter(){
+	return 0;
+}
+
+void Shape::display(){
+	return;
+}
+
 
