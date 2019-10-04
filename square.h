@@ -5,11 +5,11 @@
 
 class Square : public Shape{
     public:
-        Square(double x, double y, char* name, double side);
+        Square(double x, double y, double side, char* name);
         double area();
         double perimeter();
         double getSideA();
-        double setSideA();
+        void setSideA(double side);
         void display();
     private:
         double side_a;

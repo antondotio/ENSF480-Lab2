@@ -2,6 +2,7 @@
 // #include <stdio.h>
 // #include <iostream>
 #include "point.h"
+#include "square.h"
 #include "graphicsWorld.h"
 
 using namespace std;

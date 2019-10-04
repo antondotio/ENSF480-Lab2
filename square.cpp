@@ -5,10 +5,7 @@
 
 using namespace std;
 
-Square::Square(Point origin, char* name, double side){
-    Shape(origin, name);
-    side_a = side;
-}
+Square::Square(double x, double y, double side, char* name) : Shape(x, y, name), side_a(side){};
 
 double Square::area(){
     return (side_a * side_a);
