@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <iostream>
 #include "point.h"
+#include "shape.h"
 
 using namespace std;
 
