@@ -8,10 +8,7 @@
 
 using namespace std;
 
-Shape::Shape(double x, double y, const char* name): origin(Point(x,y)) {
-	shapeName = new char[(int)strlen(name)];
-	strcpy(shapeName, name);
-};
+Shape::Shape(double x, double y, char* shapeName): origin(Point(x,y)), shapeName(shapeName) {};
 
 const Point& Shape::getOrigin() const { return origin; }
 const char* Shape::getName() const { return shapeName; }
@@ -28,8 +25,8 @@ double Shape::distance(Shape& other) const{
 
 double Shape::distance(Shape& the_shape, Shape& other){
 	double distance;
-	double xDist = the_shape.getOrigin().get_x() - other.getOrigin().get_x();
-	double yDist = the_shape.getOrigin().get_y() - other.getOrigin().get_y();
+	double xDist = the_shape.getOrigin.x - other.getOrigin.x;
+	double yDist = the_shape.getOrigin.y - other.getOrigin.y;
 	distance = sqrt(pow(xDist, 2) + pow(yDist, 2));
 	return distance;
 }
