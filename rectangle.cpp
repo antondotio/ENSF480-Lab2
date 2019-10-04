@@ -6,7 +6,7 @@
 
 using namespace std;
 
-Rectangle::Rectangle(Point origin, char* name, double sidea, double sideb): Square(origin, name, sidea), side_b (sideb) {};
+Rectangle::Rectangle(double x, double y, char* name, double sidea, double sideb): Square(x, y, sidea, name), side_b (sideb) {};
 
 double Rectangle::area(){
     return (side_b * getSideA());
