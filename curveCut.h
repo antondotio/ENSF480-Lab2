@@ -1,3 +1,4 @@
+//curveCut.h
 #ifndef CURVECUT_H
 #define CURVECUT_H
 
