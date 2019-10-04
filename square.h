@@ -3,7 +3,7 @@
 
 #include "shape.h"
 
-class Square : public Shape{
+class Square : virtual public Shape{
     public:
         Square(double x, double y, double side, const char* name);
         double area();
